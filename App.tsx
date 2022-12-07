@@ -1,7 +1,10 @@
+import { AuthProvider } from "./src/context/AuthContext";
 import Navigation from "./src/navigation/Navigation";
 
 export default function App() {
   return (
-    <Navigation />
+    <AuthProvider>
+      <Navigation />
+    </AuthProvider>
   );
 }

@@ -3,7 +3,7 @@ import Play from '../screens/Play';
 import Historic from '../screens/Historic';
 import { Ionicons } from '@expo/vector-icons'
 import { FontAwesome5 } from '@expo/vector-icons';
-import HomeStackNavigation from './StackNavigation';
+import HomeStack from './HomeStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,7 +11,7 @@ export default function BottomTabs() {
     return (
         <Tab.Navigator
             initialRouteName='Home'>
-            <Tab.Screen name='Home' component={HomeStackNavigation}
+            <Tab.Screen name='Home' component={HomeStack}
                 options={{
                     headerShown: false,
                     tabBarIcon: ({ color, size }) => (
