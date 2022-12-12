@@ -8,7 +8,8 @@ import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => {
     const { login } = useContext(AuthContext);
-    const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+    const navigation =
+        useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
     return (
         <View>
@@ -18,7 +19,7 @@ const Login = () => {
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={() => navigation.replace("Register")}>
-                <Text>Register</Text>
+                <Text>Registerr</Text>
             </TouchableOpacity>
         </View>
     )

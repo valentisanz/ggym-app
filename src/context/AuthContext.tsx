@@ -7,15 +7,12 @@ export const AuthProvider = ({ children }: any) => {
     const [isLoading, setIsLoading] = useState(false);
     const [accessToken, setAccessToken] = useState<string | null>(null);
 
-    const login = () => {
+    const login = (email: string, password: string) => {
         setIsLoading(true);
-        setTimeout(() => {
-            const token = 'token';
-            setAccessToken(token);
-            AsyncStorage.setItem('AccessToken', token);
-            setIsLoading(false);
-        }, 5000)
-
+        const token = 'token';
+        setAccessToken(token);
+        AsyncStorage.setItem('AccessToken', token);
+        setIsLoading(false);
     }
 
     const logout = () => {

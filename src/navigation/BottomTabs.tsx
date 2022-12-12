@@ -9,11 +9,10 @@ const Tab = createBottomTabNavigator();
 
 export default function BottomTabs() {
     return (
-        <Tab.Navigator
-            initialRouteName='Home'>
+        <Tab.Navigator initialRouteName='Home'>
             <Tab.Screen name='Home' component={HomeStack}
                 options={{
-                    headerShown: false,
+                    // headerShown: false,
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons name='home' color={color} size={size} />
                     )
