@@ -14,7 +14,7 @@ const Login = () => {
     return (
         <View>
             <Text>Login Screen</Text>
-            <TouchableOpacity onPress={() => login()}>
+            <TouchableOpacity onPress={async () => await login('asd@gmail.com', '123123')}>
                 <Text>LOGIN</Text>
             </TouchableOpacity>
             <TouchableOpacity
